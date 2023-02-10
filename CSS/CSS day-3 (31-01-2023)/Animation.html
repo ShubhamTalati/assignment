@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Animations</title>
+    <style>
+        .a {
+            display: flex;
+        }
+
+        .b {
+            display: flex;
+        }
+
+        .a1 {
+            margin-right: 90px;
+            padding: 15px;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 18px;
+            height: 150px;
+            width: 150px;
+            background-color: darkslategrey;
+            animation-name: shubham;
+            animation-duration: 2s;
+            animation-delay: 2s;
+        }
+
+        @keyframes shubham {
+            from {
+                background-color: darkslategrey;
+            }
+
+            to {
+                background-color: peru;
+            }
+        }
+
+        .a2 {
+            margin-right: 90px;
+            padding: 15px;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 18px;
+            height: 150px;
+            width: 150px;
+            background-color: indianred;
+            animation-name: shubham1;
+            animation-duration: 5s;
+        }
+
+        @keyframes shubham1 {
+            0% {
+                background-color: indianred;
+            }
+
+            25% {
+                background-color: mediumslateblue;
+            }
+
+            50% {
+                background-color: olive;
+            }
+
+            100% {
+                background-color: navy;
+            }
+        }
+
+        .a3 {
+            margin-right: 90px;
+            padding: 15px;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 18px;
+            height: 150px;
+            width: 150px;
+            background-color: indianred;
+            position: relative;
+            animation-name: shubham2;
+            animation-duration: 7s;
+            animation-delay: -2s;
+
+        }
+
+        @keyframes shubham2 {
+            0% {
+                background-color: indianred;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: mediumslateblue;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: olive;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: sandybrown;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: navy;
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        .a4 {
+            margin-right: 90px;
+            padding: 15px;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 18px;
+            height: 150px;
+            width: 150px;
+            background-color: indianred;
+            position: relative;
+            animation-name: shubham3;
+            animation-duration: 7s;
+            animation-iteration-count: 3;
+
+        }
+
+        @keyframes shubham3 {
+            0% {
+                background-color: indianred;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: mediumslateblue;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: olive;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: sandybrown;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: navy;
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+
+        .b1 {
+            margin-right: 90px;
+            padding: 15px;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 18px;
+            height: 150px;
+            width: 150px;
+            background-color: indianred;
+            position: relative;
+            animation-name: shubham4;
+            animation-duration: 7s;
+            animation-iteration-count: 3;
+            animation-direction: reverse;
+
+        }
+
+        @keyframes shubham4 {
+            0% {
+                background-color: indianred;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: mediumslateblue;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: olive;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: sandybrown;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: navy;
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        .b2 {
+            margin-right: 90px;
+            padding: 15px;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 18px;
+            height: 150px;
+            width: 150px;
+            background-color: indianred;
+            position: relative;
+            animation-name: shubham5;
+            animation-duration: 7s;
+            animation-iteration-count: 3;
+            animation-direction: alternate;
+
+        }
+
+        @keyframes shubham5 {
+            0% {
+                background-color: indianred;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: mediumslateblue;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: olive;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: sandybrown;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: navy;
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        .c1,
+        .c2,
+        .c3,
+        .c4,
+        .c5 {
+
+            padding: 15px;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 18px;
+            height: 50px;
+            width: 110px;
+            position: relative;
+            background-color: darkslategrey;
+            animation-name: shubham5;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        .c1 {
+            animation-timing-function: linear;
+        }
+
+        .c2 {
+            animation-timing-function: ease;
+        }
+
+        .c3 {
+            animation-timing-function: ease-in;
+        }
+
+        .c4 {
+            animation-timing-function: ease-out;
+        }
+
+        .c5 {
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes shubham5 {
+            from {
+                left: 0px;
+            }
+
+            to {
+                left: 700px;
+            }
+        }
+    </style>
+</head>
+
+<body bgcolor="skyblue">
+    <center><u><b>
+                <h1> Css Animations:</h1>
+            </b></u></center> <br> <br>
+
+    <div class="a">
+
+        <div class="a1">Keyframe Example</div>
+        <div class="a2">Different Types of BGcolor</div>
+        <div class="a3">Change Positions using different types of BGcolor</div>
+        <div class="a4">It will be count how many times an animation should run</div>
+    </div>
+    <br> <br> <br> <br>
+
+    <div class="b">
+        <div class="b1">Reverse Animation</div>
+        <div class="b2">Alternet Animation</div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br>
+    <u><b>
+            <h2>Transitions-Timing-fuction Properties</h2>
+        </b></u> <br>
+    <div class="c">
+        <div class="c1">Linear:- (Same speed for start and end)</div> <br><br>
+        <div class="c2">ease:- (By Default)</div> <br><br>
+        <div class="c3">ease in:- (Shlowly Start)</div> <br><br>
+        <div class="c4">ease out:- (Shlowly End)</div> <br><br>
+        <div class="c5">ease in & out:- (Shlowly Start & End)</div> <br><br>
+
+    </div>
+
+</body>
+
+</html>
+

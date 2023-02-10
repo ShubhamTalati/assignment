@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment: 2</title>
+    <link rel="stylesheet" href="2.css">
+    <center>
+        <h2>Check value is a numeric value or not</h2>
+    </center>
+
+    <div class="rainbow">
+        <input type="text" name="text" id="text"><br><br>
+
+        <button onclick="disp()">Submit</button><br><br>
+
+        <p id="demo"></p>
+
+    </div>
+</head>
+
+<body>
+    <script>
+        function disp() {
+            var a = document.getElementById("text").value;
+
+            if (a == "") {
+                document.getElementById("demo").innerHTML = "Please enter any numeric value";
+            }
+            else if (isFinite(a)) {
+                document.getElementById("demo").innerHTML = "Only numeric values are allowed. Please re-enter the value";
+
+            }
+            else {
+                document.getElementById("demo").innerHTML = "Entered value is a numeric value.";
+            }
+        }   
+    </script>
+
+</body>
+
+</html>
+
+
+
+<!-- var a = prompt("Enter a Value");
+if (a == "") {
+    document.write("Please enter any numeric value");
+}
+else if (isFinite(a)) {
+    document.write("Entered value is a numeric value.");
+}
+
+else if(typeof(a) =="string"){
+    document.write("Only numeric values are allowed. Please re-enter the value");
+} -->

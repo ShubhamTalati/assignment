@@ -1,0 +1,33 @@
+div {
+    background-color: #2C74B3;
+    border: 5px solid;
+    border-radius: 10px;
+    height: 390px;
+    width: 340px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.cal {
+    background-color: #FFDE59;
+    outline: solid black;
+    border: none;
+    padding: 9px 30px;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 50px;
+}
+
+.sam {
+    width: 120px;
+    margin-top: 10px;
+    padding: 1px 20px;
+    outline: solid black;
+    font-size: 15px;
+    border-radius: 40px;
+    font-weight: 600;
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS All Text Attributes</title>
+    <style>
+        a {
+
+            text-decoration: none;
+        }
+
+        h2 {
+            background-color: lightgray;
+            color: green;
+            text-decoration: overline;
+            text-decoration-color: firebrick;
+            text-decoration-style: wavy;
+            text-transform: capitalize;
+            text-indent: 400px;
+            letter-spacing: -3px;
+            word-spacing: 15px;
+            text-shadow: 2px 2px khaki;
+        }
+
+        p.a {
+            background-color: lightgray;
+            color: dodgerblue;
+            text-align-last: center;
+            text-decoration: line-through;
+            text-decoration-color: palevioletred;
+            text-decoration-style: double;
+            text-transform: uppercase;
+            text-indent: 50px;
+            letter-spacing: 5px;
+        }
+
+        p.b {
+            background-color: lightgray;
+            color: dodgerblue;
+            text-align-last: left;
+            text-decoration: underline;
+            text-decoration-color: olive;
+            text-decoration-style: double;
+            text-transform: lowercase;
+            letter-spacing: 10px;
+
+        }
+
+        p.c {
+            background-color: lightgray;
+            color: dodgerblue;
+            text-align-last: right;
+            text-decoration: overline underline;
+            text-decoration-color: red;
+            text-decoration-style: dashed;
+        }
+
+        p.d {
+            background-color: blueviolet;
+            outline: 5px solid black;
+            font-size: 20px;
+            border: 2px;
+            direction: rtl;
+            unicode-bidi: bidi-override;
+        }
+
+        p.e {
+
+            text-align: right;
+            writing-mode: vertical-rl;
+            
+        }
+
+        /* Display in only single line  */
+        p.f {
+
+            white-space: nowrap;
+            writing-mode: horizontal-tb
+        }
+
+        div {
+            border: 2px solid black;
+            justify-content: center;
+            padding: 10px;
+            height: 250px;
+            width: 150px;
+            text-align: justify;
+            text-transform: capitalize;
+            text-shadow: 1px 1.5px;
+
+
+        }
+
+        img.aa {
+            vertical-align: baseline;
+        }
+
+        img.bb {
+            vertical-align: text-top;
+        }
+
+        img.cc {
+            vertical-align: bottom;
+        }
+
+        img.dd {
+            vertical-align: middle;
+        }
+
+        img.ee {
+            vertical-align: super;
+        }
+
+        img.ff {
+            vertical-align: sub;
+        }
+    </style>
+</head>
+
+<body bgcolor=" gray">
+    <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </h2>
+    <p class="a">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia sequi soluta at nobis cumque unde
+        quam sit
+        voluptates sint laborum reprehenderit temporibus repellendus expedita exercitationem, ullam dolorum dicta in
+        ipsam!</p>
+    <p class="b">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia sequi soluta at nobis cumque unde
+        quam sit
+        voluptates sint laborum reprehenderit temporibus repellendus expedita exercitationem, ullam dolorum dicta in
+        ipsam!</p>
+    <p class="c">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia sequi soluta at nobis cumque unde
+        quam sit
+        voluptates sint laborum reprehenderit temporibus repellendus expedita exercitationem, ullam dolorum dicta in
+        ipsam!</p>
+
+    <p class="d">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+
+    <h3 style="text-transform: uppercase; text-indent: 200px; text-shadow: 2px 2px;">Lorem ipsum dolor sit amet
+        consectetur, adipisicing elit.
+    </h3>
+    <h4 style=" text-transform: lowercase; text-indent: 200px; color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;">Lorem ipsum dolor sit amet consectetur
+        adipisicing elit.
+    </h4>
+
+    <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit beatae quod cumque aspernatur et culpa
+        facere eveniet, similique quisquam vero quaerat debitis at provident amet vitae est quos odio repellat!</div>
+    <br>
+
+    <!-- Display in only single line -->
+    <p class="f">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p> <br>
+
+
+    <center><u><b><label for="Vertical-align">Vertical-aligns: </label></b></u></center><br>
+    <center> <img class="aa" src="1.jpg" alt="image" width="10" height="10"> Default Align:</center><br>
+    <center> <img class="bb" src="1.jpg" alt="image" width="10" height="10"> Top Align:</center><br>
+    <center> <img class="cc" src="1.jpg" alt="image" width="10" height="10"> Bottom Align:</center><br>
+    <center> <img class="dd" src="1.jpg" alt="image" width="10" height="10"> Middle Align:</center><br>
+    <center> <img class="ee" src="1.jpg" alt="image" width="10" height="10"> sup Align:</center><br>
+    <center> <img class="ff" src="1.jpg" alt="image" width="10" height="10"> sub Align:</center><br>
+
+
+    <p class="e">Link with no underline:
+        <a href="www.wikipedia.com">www.wikipedia.com</a>
+    </p>
+
+
+</body>
+
+</html>

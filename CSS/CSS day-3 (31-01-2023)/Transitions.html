@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Transitions</title>
+    <style>
+        .b {
+            font-size: 20px;
+            text-align: center;
+            padding: 20px;
+            margin-right: 150px;
+            height: 150px;
+            width: 150px;
+            background-color: brown;
+            transition: 2s;
+            transition-delay: 1s;
+        }
+
+        .b:hover {
+            height: 200px;
+            width: 300px;
+            cursor: pointer;
+            background-color: rosybrown;
+            transform: rotate(360deg);
+        }
+
+        .f .f1,
+        .f2,
+        .f3,
+        .f4,
+        .f5 {
+            height: 150px;
+            width: 150px;
+            background-color: teal;
+            transition: 2s;
+        }
+
+        .f1:hover,
+        .f2:hover,
+        .f3:hover,
+        .f4:hover,
+        .f5:hover {
+            cursor: pointer;
+            width: 800px;
+        }
+
+        .f1 {
+            margin-left: 10px;
+            padding: 20px;
+            transition-timing-function: linear;
+        }
+
+        .f2 {
+            margin-left: 10px;
+            padding: 20px;
+            transition-timing-function: ease;
+        }
+
+        .f3 {
+            margin-left: 10px;
+            padding: 20px;
+            transition-timing-function: ease-in;
+        }
+
+        .f4 {
+            margin-left: 10px;
+            padding: 20px;
+            transition-timing-function: ease-out;
+        }
+
+        .f5 {
+            margin-left: 10px;
+            padding: 20px;
+            transition-timing-function: ease-in-out;
+        }
+    </style>
+</head>
+
+<body bgcolor="lightgray">
+    <center>
+        <u><b>
+                <h1>Css Transitions all Properties</h1>
+            </b></u> <br>
+
+
+
+        <div class="a">
+            <div class="b">It's a Transition Propertie.</div>
+
+        </div>
+    </center>
+    <br><br>
+
+    <u><b>
+            <h2>Transitions-Timing-fuction Properties</h2>
+        </b></u> <br>
+    <div class="f">
+        <div class="f1">Linear:- (Same speed for start and end)</div> <br><br>
+        <div class="f2">ease:- (By Default)</div> <br><br>
+        <div class="f3">ease in:- (Shlowly Start)</div> <br><br>
+        <div class="f4">ease out:- (Shlowly End)</div> <br><br>
+        <div class="f5">ease in & out:- (Shlowly Start & End)</div> <br><br>
+
+    </div>
+</body>
+
+</html>

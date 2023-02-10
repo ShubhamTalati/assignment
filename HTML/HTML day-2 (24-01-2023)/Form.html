@@ -1,0 +1,218 @@
+<!-- Forms and Form Elements:
+(Buttons,Label,Option,Datalist,Implementing Select and Optgroup Tags
+Implementing Input and Textarea Tags,Implementing Fieldset and Legend Tags,Implementing Output Tag,Keygen,HTML Audio, Video, and Article Tags),
+HTML Input Types :
+(Text, Radio, Checkbox, Button, Number, Range, Date, Datetime-local, Time, Week, Month
+Telephone, Email, URL, Password, Color, Image, File, Hidden, Search, Reset, Submit) -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script src="/demojs.js"></script>
+    <p id="disp1"></p>
+    <h5 id="none"></h5>
+</head>
+
+<body>
+
+    <form action="" method="post" target="_blank" novalidate>
+        <fieldset>
+            <legend><b> User Details </b></legend>
+            <h2> <u> Input Text:</u></h2>
+            <label for="fname">First Name:</label> <br>
+            <input type="text" id="fname" name="fname" value="Shubham" placeholder="Enter your First name"><br><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname" value="Talati" placeholder="Enter your Last name"><br><br>
+            <label for="mail">Email-Id</label><br>
+            <input type="email" name="mail" id="mail" placeholder="Enter Your MailID"><br><br>
+            <label for="pass">Password</label><br>
+            <input type="password" name="pass" id="pass" placeholder="Enter Your Password"><br><br>
+            <hr>
+            <h2> <u>Keygen Tag:</u></h2>
+            Encription: <keygen name="secure"></keygen>
+            <input type="submit" value="Ok"> <br><br>
+
+            <hr>
+            <h2> <u> Butto To Display Information:</u></h2>
+            <button type="button" onclick="disp()">Display Fname & Lname</button><br><br>
+
+            <hr>
+            <h2> <u>Formaction Tag:</u></h2>
+            <button type="button" onclick="disp()" formaction="demo1js.js">Formaction</button><br><br>
+
+            <hr>
+            <h2> <u> Reset Text:</u></h2>
+            <button type="reset">Reset</button><br><br>
+            <hr>
+
+            <h2> <u> Search:</u></h2>
+            <input type="search" name="serarch" id="serach">
+            <input type="submit" value="submit">
+            <hr>
+
+            <h2> <u> URL:</u></h2>
+            <input type="url" name="url" id="url">
+            <input type="submit" value="submit">
+            <hr>
+
+            <h2> <u> Choose Color:</u></h2>
+            <input type="color" name="" id="" value=""> <br><br>
+
+
+            <hr>
+            <h2> <u>Display Image:</u></h2>
+            <input type="image" src="2.jpg" alt="" height="100" width="100"><br><br>
+
+            <hr>
+            <!-- output Elements -->
+            <h2> <u> Range and output tag:</u></h2>
+            <form action="" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                0
+                <input type="range" id="a" name="a" value="50">
+                100 <br> +
+                <input type="number" id="b" name="b" value="50">=
+                <output name="x" for="a b"></output>
+                <br><br>
+                <input type="submit"><br><br>
+            </form>
+
+            <hr>
+            <!-- Date -->
+            <h2> <u> Choose Date:</u></h2>
+            <input type="date" name="" id=""><br><br>
+
+            <hr>
+            <!-- time -->
+            <h2> <u> Display Time:</u></h2>
+            <input type="time" name="appt">
+            <input type="submit" value="Submit"><br><br>
+
+            <hr>
+            <!-- week -->
+            <h2> <u> Choose Week:</u></h2>
+            <input type="week" name="" id=""><br><br>
+
+            <hr>
+            <!-- Month -->
+            <h2> <u> Choose Month:</u></h2>
+            <input type="month" name="" id=""><br><br>
+
+            <hr>
+            <!-- DateTime -->
+            <h2> <u> Choose Datetime:</u></h2>
+            <input type="datetime-local" name="" id=""><br><br>
+
+            <hr>
+            <!-- phone number -->
+            <h2> <u>Display Phone Number:</u></h2>
+            <input type="tel" name="phone" placeholder="012-345-6789">
+            <input type="submit" value="submit"> <br> <br>
+
+            <hr>
+
+            <!-- Upload File -->
+            <h2> <u>Choose File:</u></h2>
+            Select File:<input type="file" name="file" id="file">
+            <hr>
+
+            <!-- Audio Element -->
+            <h2> <u>Audio Element:</u></h2>
+            <h3>Click on play button to play sound...</h3>
+
+            <audio controls>
+
+                <source src="horse.ogv" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio> <br>
+
+
+            <hr>
+            <!-- video element -->
+            <h2> <u>Video Element:</u></h2>
+            <video width="300" height="200" controls>
+                <source src="movie.mp4" type="video/mp4">
+
+            </video>
+
+
+            <hr>
+            <!-- Article Elements -->
+            <h2> <u>Article Element:</u></h2>
+            <article>
+                <h3>Information</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Incidunt in voluptates impedit quidem dolores consequatur nisi autem
+                    fugiat neque ad rem officia ab perferendis qui provident,
+                    totam aspernatur voluptatem placeat.</p>
+
+            </article>
+            <hr>
+
+
+            <!-- Radio Button -->
+            <h2> <u>Radio Button:</u></h2>
+            <b> Choose any one option: </b><br>
+            <input type="radio" name="cars" id="bmw"> BMW <br>
+            <input type="radio" name="cars" id="audi"> Audi <br>
+            <input type="radio" name="cars" id="rolls"> Rolls Royce <br>
+            <input type="radio" name="cars" id="volvo"> Volvo <br>
+            <input type="radio" name="cars" id="Mercedes"> Mercedes <br>
+            <button type="button" onclick="checkButton()"> Submit </button>
+
+
+            <hr>
+
+            <!-- Checkbox -->
+            <h2> <u>Checkbox:</u></h2>
+            <b> Choose any options: </b><br>
+            <input type="checkbox" name="Bike1"> Ducati <br>
+            <input type="checkbox" name="Bike2"> KTM <br>
+            <input type="checkbox" name="Bike3"> BMW <br>
+            <input type="checkbox" name="Bike4"> Kawasaki <br>
+            <input type="checkbox" name="Bike5"> Triump <br>
+
+            <hr>
+
+            <!-- drop down list -->
+            <h2> <u>Drop Down List:</u></h2>
+            <b> Choose your favorite cars: </b><br>
+            <select name="cars" id="cars" size="1" >
+                <optgroup label="First Choice:">
+                <option value="Audi"> Audi</option>
+                <option value="Rolls Royce"> Rolls Royce</option>
+                <option value="Volvo" disabled> Volvo</option>
+                <option value="Mercedes" selected>Mercedes</option>
+            </optgroup>
+
+            <optgroup label="Second Choice: ">
+                <optgroup label="First Choice:">
+                    <option value="Ducati"> Ducati</option>
+                    <option value="KTM"> KTM</option>
+                    <option value="BMW" disabled> BMW</option>
+                    <option value="Triump" selected>Triump</option>
+
+            </optgroup>
+            </select>
+            <br>
+            <hr>
+
+            <!-- Textarea -->
+            <h2> <u>Teaxtarea:</u></h2>
+            <b>It's a Textarea.</b> <br>
+            <textarea name="Message" cols="5" rows="5">
+        Hello, Good Morning.
+
+    </textarea>
+
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment: 12</title>
+    <link rel="stylesheet" href="12.css">
+
+    <form action="" id="f1">
+        <select name="" id="demo" onchange="disp()">
+            <option name="country" value="demo" id="1">Please select</option>
+            <option name="country" value="Your Selected Country: India" id="2">India</option>
+            <option name="country" value="Your Selected Country: Uk" id="3">Uk</option>
+            <option name="country" value="Your Selected Country: Australia" id="4">Australia</option>
+            <option name="country" value="Your Selected Country: Singapore" id="5">Singapore</option>
+            <option name="country" value="Your Selected Country: Spain" id="6">Spain</option>
+        </select><br> <br>
+
+        <div id="demo1">
+            <p>Your Selected Country : India</p>
+            <p>Your Selected Country : Uk</p>
+            <p>Your Selected Country : Australia</p>
+            <p>Your Selected Country : Singapore</p>
+            <p>Your Selected Country : Spain</p>
+        </div> <br><br>
+        <p id="p1"></p>
+    </form>
+</head>
+
+<body bgcolor="gray">
+    <script>
+
+
+
+        function disp() {
+            let a = document.getElementById("demo");
+            let b = document.getElementsByName("country");
+            let txt = "";
+            let i;
+            //// console.log(a.length);
+
+            if (a.value == "demo") {
+                // console.log(true);
+                for (i = 1; i < a.length; i++) {
+                    txt = txt + "<br>" + b[i].value;
+                }
+                // console.log(txt);
+                document.getElementById("demo1").innerHTML = txt;
+            }
+            else {
+                document.getElementById("demo1").innerHTML = a.value;
+            }
+
+
+        }
+//             // let a = document.getElementById("demo");
+//             // if (a.style.display === "none") {
+//             //     a.style.display = "block";
+//             // } else {
+//             //     a.style.display = "none";
+//             // }
+
+
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+div {
+   background-color: #2C74B3;
+   border: 5px solid;
+   border-radius: 10px;
+   height: 200px;
+   width: 600px;
+   margin-top: 100px;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 10px;
+   vertical-align: middle;
+}
+
+#demo {
+   text-align: center;
+   margin-left: 160px;
+   font-family: 'Brush Script MT', cursive;
+   font-style: inherit;
+   font-weight: unset;
+   font-size: 15pt;
+}
+
+label {
+   font-family: 'Brush Script MT', cursive;
+   font-size: 14pt;
+}

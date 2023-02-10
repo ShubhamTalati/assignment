@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Assignment: 5</title>
+    <link rel="stylesheet" href="5.css">
+
+
+
+    <div>
+        <h1>Please select your technology:</h1>
+
+        <form action="">
+            <input type="radio" name="one" value="PHP" id="1" onclick="disp()">
+            <label for="1">PHP</label>
+
+            <input type="radio" name="one" value="ASP.NET" id="2" onclick="disp1()">
+            <label for="2">ASP.NET</label>
+
+
+            <input type="radio" name="one" value="ASP" id="3" onclick="disp2()">
+            <label for="3">ASP</label>
+
+
+            <input type="radio" name="one" value="JSP" id="4" onclick="disp3()">
+            <label for="4">JSP</label>
+
+
+            <input type="radio" name="one" value="PERL" id="5" onclick="disp4()">
+            <label for="5">PERL</label>
+
+
+            <input type="radio" name="one" value="Cold Fusion" id="6" onclick="disp5()">
+            <label for="6">Cold Fusion</label>
+
+
+            <input type="radio" name="one" value="Other" id="7" onclick="disp6()">
+            <label for="7">Other</label>
+
+
+            <br>
+            <span id="demo"></span><br>
+            <span id="demo1"></span><br>
+            <span id="demo2"></span><br>
+            <span id="demo3"></span><br>
+            <span id="demo4"></span><br>
+            <span id="demo5"></span><br>
+            <span id="demo6"></span><br>
+    </div>
+
+
+
+    </form>
+</head>
+
+<body bgcolor="#DBA39A">
+    <script>
+        function disp() {
+            let a = document.getElementsByName('one');
+            for (i = 0; i < a.length; i++) {
+                if (a[i].checked)
+
+                    document.getElementById("demo").innerHTML = "You have selected: " + a[0].value;
+
+            }
+        }
+        function disp1() {
+            let a = document.getElementsByName('one');
+            for (i = 0; i < a.length; i++) {
+                if (a[i].checked)
+
+                    document.getElementById("demo").innerHTML = "You have selected: " + a[1].value;
+
+            }
+        }
+        function disp2() {
+            let a = document.getElementsByName('one');
+            for (i = 0; i < a.length; i++) {
+                if (a[i].checked)
+
+                    document.getElementById("demo").innerHTML = "You have selected: " + a[2].value;
+
+            }
+        }
+        function disp3() {
+            let a = document.getElementsByName('one');
+            for (i = 0; i < a.length; i++) {
+                if (a[i].checked)
+
+                    document.getElementById("demo").innerHTML = "You have selected: " + a[3].value;
+
+            }
+        }
+        function disp4() {
+            let a = document.getElementsByName('one');
+            for (i = 0; i < a.length; i++) {
+                if (a[i].checked)
+
+                    document.getElementById("demo").innerHTML = "You have selected: " + a[4].value;
+
+            }
+        }
+        function disp5() {
+            let a = document.getElementsByName('one');
+            for (i = 0; i < a.length; i++) {
+                if (a[i].checked)
+
+                    document.getElementById("demo").innerHTML = "You have selected: " + a[5].value;
+
+            }
+        }
+        function disp6() {
+            let a = document.getElementsByName('one');
+            for (i = 0; i < a.length; i++) {
+                if (a[i].checked)
+
+                    document.getElementById("demo").innerHTML = "You have selected: " + a[6].value;
+
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

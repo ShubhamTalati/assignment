@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: grey;
+        }
+
+        p {
+            margin-top: 100px;
+            margin-bottom: 100px;
+            margin-right: 150px;
+            margin-left: 80px;
+            background-color: lightblue;
+            padding: 10px;
+            outline: 10px solid salmon;
+
+
+        }
+
+        p.all {
+            border-style: solid dotted double dashed;
+            border-width: medium;
+            border-color: red green yellow blue;
+            border-radius: 10px;
+        }
+
+        p.solid {
+            border-style: solid;
+            border-width: thin;
+            border-color: rgb(0, 205, 205);
+            border-radius: 10px;
+        }
+
+        p.dashed {
+            border-style: dashed;
+            border-width: 2px;
+            border-color: rgb(205, 103, 0);
+            border-radius: 10px;
+        }
+
+        p.groove {
+            border-style: groove;
+            border-width: inherit;
+            border-color: rgb(0, 103, 205);
+        }
+
+        p.double {
+            border-style: double;
+            border-width: 10px;
+            border-color: rgb(0, 205, 14);
+        }
+
+        p.dotted {
+            border-style: dotted;
+            border-width: 2px;
+            border-color: rgb(185, 205, 0);
+        }
+
+        p.ridge {
+            border-style: ridge;
+            border-width: 2px;
+            border-color: rgb(205, 0, 44);
+        }
+
+        p.outset {
+            border-style: outset;
+            border-width: 2px;
+            border-color: rgb(205, 79, 0);
+        }
+
+        p.inset {
+            border-style: inset;
+            border-width: 2px;
+            border-color: rgb(0, 55, 205);
+        }
+
+        p.hidden {
+            border-style: hidden;
+            border-width: 2px;
+            border-color: rgb(205, 0, 133);
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <p class="all">Hello Shubham...</p>
+    <p class="solid">Hello Shubham...</p>
+    <p class="dashed">Hello Shubham...</p>
+    <p class="groove">Hello Shubham...</p>
+    <p class="double">Hello Shubham...</p>
+    <p class="dotted">Hello Shubham...</p>
+    <p class="ridge">Hello Shubham...</p>
+    <p class="outset">Hello Shubham...</p>
+    <p class="inset">Hello Shubham...</p>
+    <p class="hidden">Hello Shubham...</p>
+
+</body>
+
+</html>

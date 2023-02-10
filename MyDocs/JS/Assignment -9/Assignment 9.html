@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <form action="" method="post">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment: 9</title>
+        <link rel="stylesheet" href="9.css">
+
+        <div>
+
+
+            <b> Please enter first number: </b> <input type="text" class="sam" name="fone" id="one" value=""><br><br>
+            <b>Please enter second number:</b><input type="text" class="sam" name="sone" id="two" value=""><br><br>
+
+            <b> Please select operation you want to perform : </b><br><br>
+
+            <input type="radio" name="math" id="" value=""><b>Addition</b><br>
+            <input type="radio" name="math" id="" value=""><b>Subtraction</b><br>
+            <input type="radio" name="math" id="" value=""><b>Multiplication</b><br>
+            <input type="radio" name="math" id="" value=""><b>Division</b> <br><br>
+
+
+            <input type="button" class="cal" value="Calculate" onclick="disp()">
+            <input type="reset" class="cal" value="Reset">
+    </form>
+
+    <p id="demo"></p>
+    </div>
+</head>
+
+<body bgcolor="#DBA39A">
+    <script>
+        function disp() {
+            let ans = document.getElementsByName("math");
+            let first = document.getElementById("one").value;
+            let sec = document.getElementById("two").value;
+
+
+            if (first == "" && sec == "") {
+                document.getElementById("demo").innerHTML = "Please enter first number or Please enter second number";
+
+            }
+
+
+            else if (ans[0].checked) {
+                let sum = parseInt(first) + parseInt(sec);
+                document.getElementById("demo").innerHTML = "Result is : " + sum;
+
+            }
+            else if (ans[1].checked) {
+                let sum = parseInt(first) - parseInt(sec);
+                document.getElementById("demo").innerHTML = "Result is : " + sum;
+
+            }
+            else if (ans[2].checked) {
+                let sum = parseInt(first) * parseInt(sec);
+                document.getElementById("demo").innerHTML = "Result is : " + sum;
+
+            }
+            else if (ans[3].checked) {
+                let sum = parseInt(first) / parseInt(sec);
+                document.getElementById("demo").innerHTML = "Result is : " + sum;
+
+            }
+            else if (isNaN(first) && isNaN(sec)) {
+                document.getElementById("demo").innerHTML = "Please enter only numeric value for first number or Please enter only numeric value for second number";
+            }
+
+            else {
+                document.getElementById("demo").innerHTML = "Please select the operation you want to perform";
+            }
+        }
+    </script>
+</body>
+
+</html>

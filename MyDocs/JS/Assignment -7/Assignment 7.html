@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment:7</title>
+    <link rel="stylesheet" href="7.css">
+
+
+
+    <form onchange="checkall()">
+        <div>
+            <input type="checkbox" name="check1" id="8" onclick=' checkUncheck(this)'>
+            <label for="8">Check All</label><br> <br>
+
+
+            <input type="checkbox" name="check" id="1">
+            <label for="1">USA</label><br> <br>
+
+            <input type="checkbox" name="check" id="2">
+            <label for="2">UK</label><br> <br>
+
+            <input type="checkbox" name="check" id="3">
+            <label for="3">USA</label><br> <br>
+
+
+            <input type="checkbox" name="check" id="4">
+            <label for="4">India </label><br> <br>
+
+
+            <input type="checkbox" name="check" id="5">
+            <label for="5">Asia Pacific</label><br> <br>
+
+            <input type="checkbox" name="check" id="6">
+            <label for="6">Australia</label><br> <br>
+
+            <input type="checkbox" name="check" id="7">
+            <label for="7">Middle East</label><br> <br>
+
+
+        </div>
+    </form>
+
+</head>
+
+<body bgcolor="#DBA39A">
+
+
+    <script>
+
+        function checkUncheck(checkBox) {
+            let check1 = document.getElementsByName('check');
+
+            for (let i = 0; i < check1.length; i++) {
+                check1[i].checked = checkBox.checked;
+
+            }
+        }
+
+        function checkall() {
+            let check1 = document.getElementsByName('check');
+            let check2 = document.getElementById('8');
+            const change = Array.from(check1);
+
+            if (change.every((value) => value.checked)) {
+                check2.checked = true;
+            }
+            else {
+                check2.checked = false;
+            }
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>

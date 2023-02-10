@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment: 13</title>
+
+
+    <style>
+        #kids {
+            background-color: #2C74B3;
+            border: 5px solid;
+            border-radius: 10px;
+            height: 500px;
+            width: 300px;
+            margin-top: auto;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            vertical-align: middle;
+        }
+    </style>
+    <form>
+
+        <div id="kids">
+            1:
+            <input type="text" name="child_1">
+            <a href="#" id="add_kid()_1" onclick="disp()" value="+" />Add a Contact</a>
+
+        </div>
+    </form>
+</head>
+
+<body bgcolor="#DBA39A">
+    <script>
+        let i = 1;
+
+        function disp() {
+            i++;
+            var a = document.createElement('div');
+            var id = i;
+            a.innerHTML = '<br>' + id + ':<input type="text" name="child_' + id + '"/>' + ' <input type="button" id="rem_kid()_' + id + '" onclick="rmv(this)" value="X" />';
+            document.getElementById('kids').appendChild(a);
+        }
+
+        function rmv(a) {
+            document.getElementById('kids').removeChild(a.parentNode);
+            i--;
+        }
+    </script>
+</body>
+
+</html>

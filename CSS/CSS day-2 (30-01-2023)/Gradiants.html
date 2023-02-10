@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Gradiants</title>
+    <style>
+        /* Linear Gradiant... */
+        .grad {
+            display: inline-flex;
+        }
+
+        .grad1 {
+            margin-right: 100px;
+            padding: 20px;
+            height: 200px;
+            width: 200px;
+            background-image: linear-gradient(to left, red, yellow, green);
+        }
+
+        .grad2 {
+
+            margin-right: 100px;
+            padding: 20px;
+            height: 200px;
+            width: 200px;
+            background-image: linear-gradient(to right, red, yellow, green);
+        }
+
+        .grad3 {
+
+            padding: 20px;
+            height: 200px;
+            width: 200px;
+            background-image: repeating-linear-gradient(190deg, red, yellow 7%, green 10%);
+        }
+
+        .rain {         
+            height: 55px;
+            background-color: red;
+            background-image: linear-gradient(red, yellow, green, blue, gray, pink, orange);
+            text-align: center;
+            color: white;
+            font-size: 40px;
+            outline: 5px solid black;
+            padding: 5px;
+        }
+
+
+        /* Redial Gradiant... */
+        .rdal1 {
+            height: 55px;
+            background-color: red;
+            background-image: linear-gradient(red, yellow, green, blue, gray, pink, orange);
+            text-align: center;
+            color: white;
+            font-size: 40px;
+            padding: 5px;
+            outline: 5px solid black;
+        }
+
+        .rdal {
+            display: inline-flex;
+        }
+
+        .rdal2 {
+            margin-right: 100px;
+            height: 200px;
+            width: 200px;
+            background-image: radial-gradient(red, yellow, green);
+        }
+
+        .rdal3 {
+            margin-right: 100px;
+            height: 200px;
+            width: 200px;
+            background-image: radial-gradient(red 5%, yellow 15%, green 60%);
+        }
+
+        .rdal4 {
+            height: 200px;
+            width: 200px;
+            background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+        }
+
+        /* Conic Gradiant... */
+        .conic {
+            height: 55px;
+            background-color: red;
+            background-image: linear-gradient(red, yellow, green, blue, gray, pink, orange);
+            text-align: center;
+            color: white;
+            font-size: 40px;
+            padding: 5px;
+            outline: 5px solid black;
+
+        }
+
+        .conic1 {
+            display: flex;
+        }
+
+        .conic2 {
+            margin-right: 100px;
+            height: 200px;
+            width: 200px;
+            background-image: conic-gradient(red, yellow, green);
+        }
+
+        .conic3 {
+            margin-right: 100px;
+            height: 200px;
+            width: 200px;
+            background-image: conic-gradient(red, yellow, green);
+            border-radius: 50%;
+        }
+
+        .conic4 {
+            height: 200px;
+            width: 200px;
+            background-image: repeating-conic-gradient(red 10%, yellow 20%);
+            border-radius: 50%;
+        }
+
+        /* Box Shadows */
+        .shado {
+            height: 55px;
+            background-color: red;
+            background-image: linear-gradient(red, yellow, green, blue, gray, pink, orange);
+            text-align: center;
+            color: white;
+            font-size: 40px;
+            outline: 5px solid black;
+            padding: 5px;
+        }
+
+        .shado1 {
+            display: flex;
+        }
+
+        .shado2 {
+            padding: 10px;
+            margin-right: 150px;
+            height: 200px;
+            width: 200px;
+            background-color: tomato;
+            box-shadow: 10px 10px;
+        }
+
+        .shado3 {
+            padding: 10px;
+            margin-right: 150px;
+            height: 200px;
+            width: 200px;
+            background-color: violet;
+            box-shadow: 10px 10px lightsalmon;
+        }
+
+        .shado4 {
+            padding: 20px;
+            height: 200px;
+            width: 200px;
+            background-color: darkslateblue;
+            box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green;
+
+        }
+    </style>
+</head>
+
+<body bgcolor="lightgray">
+
+    <div class="rain">Linear Gradiant...</div><br><br>
+
+    <br><br>
+    <div class="grad">
+        <div class="grad1"></div>
+        <div class="grad2"></div><br><br>
+        <div class="grad3"></div>
+    </div><br> <br> <br>
+    <hr>
+
+
+    <div class="rdal1">Redial Gradiant...</div> <br>
+    <div class="rdal">
+        <br> <br>
+        <div class="rdal2"></div>
+        <div class="rdal3"></div>
+        <div class="rdal4"></div>
+    </div> <br><br><br>
+    <hr>
+
+
+    <div class="conic">Conic Gradiant...</div>
+    <br> <br>
+    <div class="conic1">
+        <div class="conic2"></div>
+        <div class="conic3"></div>
+        <div class="conic4"></div>
+    </div> <br><br><br>
+    <hr>
+
+    <div class="shado">Box Shadows...</div>
+    <br> <br>
+    <div class="shado1">
+        <div class="shado2"> This is a box Shadows.</div>
+        <div class="shado3"> This is a box Shadows.</div>
+        <div class="shado4"> This is a Multiple box Shadows .</div>
+
+    </div>
+</body>
+
+</html>

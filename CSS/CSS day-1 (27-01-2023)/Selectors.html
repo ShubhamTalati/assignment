@@ -1,0 +1,73 @@
+<!-- CSS Selectors,Element Selector,Id Selector,Class Selector,
+    Universal Selector,Grouping Selector,
+     CSS Attribute Selectors -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* Universel Selector */
+        * {
+
+            color: red;
+            text-align: center;
+        }
+
+        /* Id Selector */
+        #one {
+            color: cornflowerblue;
+            text-align: center;
+        }
+
+        /* Class Selector */
+        .class1 {
+            color: brown;
+            text-align: center;
+        }
+
+        /* Grouping Selector */
+        p,
+        h4,
+        h5 {
+            color: darkblue;
+            text-align: center;
+        }
+
+        /* Attribute Selectors */
+        a[target] {
+            background-color: darkgoldenrod;
+        }
+    </style>
+</head>
+
+<body bgcolor="lightgray">
+    <center><u><b><label for="Id Selector">ID Selector: </label></b></u></center>
+    <h2 id="one">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2> <br>
+
+    <center><u><b><label for="Class Selector">Class Selector: </label></b></u></center>
+    <h3 class="class1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+    <h3 class="class1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </h3>
+    <br>
+
+    <!-- <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h3> -->
+
+    <center><u><b><label for="Grouping Selector">Grouping Selector: </label></b></u></center>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h4>
+    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h5>
+
+
+    <center><u><b><label for="Id Selector">Attribute Selector: </label></b></u></center>
+    <a href="https://www.w3schools.com">w3schools.com</a>
+    <a href="http://www.google.com" target="_blank">google.com</a>
+    <a href="http://yahoo.com" target="_top">yahoo.com</a>
+
+
+</body>
+
+</html>

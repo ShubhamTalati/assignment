@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Assignment: 4</title>
+    <link rel="stylesheet" href="4.css">
+
+
+    <div>
+        <h2>Please select your technology:</h2>
+
+        <form action="" onclick="disp()">
+            <input type="radio" name="one" value="PHP" id="1">
+            <label for="1">PHP</label>
+
+            <input type="radio" name="one" value="ASP.NET" id="2">
+            <label for="2">ASP.NET</label>
+
+
+            <input type="radio" name="one" value="ASP" id="3">
+            <label for="3">ASP</label>
+
+
+            <input type="radio" name="one" value="JSP" id="4">
+            <label for="4">JSP</label>
+
+
+            <input type="radio" name="one" value="PERL" id="5">
+            <label for="5">PERL</label>
+
+
+            <input type="radio" name="one" value="Cold Fusion" id="6">
+            <label for="6">Cold Fusion</label>
+
+
+            <input type="radio" name="one" value="Other" id="7">
+            <label for="7">Other</label>
+
+
+            <br><br>
+            <span id="demo"></span><br>
+    </div>
+
+
+
+    </form>
+</head>
+
+<body bgcolor="#DBA39A">
+    <script>
+        function disp() {
+
+            var ele = document.getElementsByName('one');
+
+            for (i = 0; i < ele.length; i++) {
+                if (ele[i].checked)
+
+                    document.getElementById("demo").innerHTML = "You have selected: " + ele[i].value;
+
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

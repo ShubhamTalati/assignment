@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Assignment: 8</title>
+	<link rel="stylesheet" href="8.css">
+
+
+	<div>
+		<h2>Input Date:</h2>
+		<input types="text" name="txt" id="date" />
+		<input type="submit" id="one" name="submit" value="Submit" onclick="validatedate()" />
+	</div>
+
+	<p id="demo"></p>
+</head>
+
+<body bgcolor="#DBA39A">
+	<script>
+		function validatedate() {
+			var dateText = document.getElementById("date");
+			if (dateText) {
+
+				var error = "";
+				var split = dateText.value.split('-');
+
+
+				if (split.length > 0) {
+					var month = parseInt(split[0]);
+					var day = parseInt(split[1]);
+					var year = parseInt(split[2]);
+
+					if (isNaN(day) || isNaN(month) || isNaN(year)) {
+						error = "The day, month and year need to be numbers";
+						alert(error);
+						return false;
+					}
+
+					if (month <= 0 || day <= 0 || year <= 0) {
+						error = "The day, month and year need to be positive values greater than 0";
+					}
+
+
+					if (month > 12) {
+						error = "Invalid month. Month should be within the range 1 to 12";
+					}
+
+					if (error == "") {
+						var daysPerMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+						if (year % 4 == 0) {
+							daysPerMonth[1] = 29;
+						}
+
+						if (day > daysPerMonth[month - 1]) {
+							error = "Invalid day. Day should be within the range 1 to 31";
+						}
+					}
+				}
+				else {
+					error = "Please enter date in MM-DD-YYYY format";
+				}
+
+				if (error) {
+					alert(error);
+					return false;
+				}
+
+			}
+			alert("You have entered valid date. Its " + month + "-" + day + "-" + year + " . Thank you.");
+
+
+		}
+	</script>
+</body>
+
+</html>
